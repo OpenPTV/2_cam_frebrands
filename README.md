@@ -13,3 +13,4 @@ Explained on our website https://www.openptv.net
 ## Screencast
 <a href="./2_cam_firebrands.mp4"> Download the video</a>
 
+![2_cam_firebrands](https://github.com/user-attachments/assets/4510cf64-341f-49c4-91b6-f41b1b1a01bf)

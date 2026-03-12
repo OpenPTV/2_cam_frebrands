@@ -33,7 +33,7 @@ criteria:
   cny: 0.1
   corrmin: 0.4
   csumg: 0.33
-  eps0: 0.2
+  eps0: 0.5
 detect_plate:
   gvth_1: 94
   gvth_2: 94
@@ -55,6 +55,7 @@ dumbbell:
   dumbbell_penalty_weight: 1.0
   dumbbell_scale: 25.0
   dumbbell_step: 1
+  dumbbell_fixed_camera: 0
 examine:
   Combine_Flag: false
   Examine_Flag: false
@@ -105,8 +106,8 @@ ptv:
   - cal/cam1.tif
   - cal/cam2.tif
   img_name:
-  - img/cam1.0303
-  - img/cam2.0303
+  - cal/cam1.tif
+  - cal/cam2.tif
   imx: 1920
   imy: 1200
   mmp_d: 1.0
@@ -120,8 +121,8 @@ ptv:
   negative: false
 sequence:
   base_name:
-  - img/cam1.%04d
-  - img/cam2.%04d
+  - cam1.#
+  - cam1.#
   first: 303
   last: 308
 shaking:
@@ -135,18 +136,18 @@ targ_rec:
   cr_sz: 5
   disco: 100
   gvthres:
-  - 78
-  - 78
-  nnmax: 100
-  nnmin: 1
-  nxmax: 50
-  nxmin: 1
-  nymax: 50
-  nymin: 1
+  - 150
+  - 150
+  nnmax: 500
+  nnmin: 10
+  nxmax: 100
+  nxmin: 5
+  nymax: 100
+  nymin: 5
   sumg_min: 156
 track:
-  angle: 150.0
-  dacc: 1500.0
+  angle: 360.0
+  dacc: 1000.0
   dvxmax: 2000.0
   dvxmin: -2000.0
   dvymax: 2000.0

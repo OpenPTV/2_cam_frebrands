@@ -10,3 +10,7 @@ Courtesy of University of Maryland
 ## Installation of PyPTV 
 Explained on our website https://www.openptv.net
 
+## Screencast
+<p align="center">
+  <video src="./2_cam_firebrands.mp4" width="80%" controls></video>
+</p>
